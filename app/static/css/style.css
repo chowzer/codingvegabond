@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
+:root {
+    --primary-color: #1ebba3;
+    --secondary-color: #189582;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
@@ -37,7 +42,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #1ebba3;
+    color: var(--primary-color);
 }
 
 /*-- landing page --*/
@@ -59,7 +64,7 @@ body {
 }
 
 .home-inner {
-    background-image: url("/static/img/computer-table.jpg");
+    background-image: url("/static/img/computer-table.jpg"); 
     position: fixed;
     display: table;
     top: 0;
@@ -124,13 +129,13 @@ body {
     padding: 0.6rem 1.2rem;
     margin: 1rem;
     color: white;
-    background-color: #1ebba3;
-    border-color: #1ebba3;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .btn-secondary:hover {
-    background-color: #189582;
-    border-color: #189582;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 /*Features Section */
@@ -151,12 +156,12 @@ h3.heading {
 .heading-underline {
     width: 6rem;
     height: .2rem;
-    background-color: #1ebba3;
+    background-color: var(--primary-color);
     margin: 0 auto 2rem;
 }
 
 .feature svg.svg-inline--fa {
-    color: #1ebba3;
+    color: var(--primary-color);
 }
 
 .feature h3 {
@@ -169,9 +174,8 @@ h3.heading {
 }
 
 /*Resources Section*/
-
-.fixed {
-    background-image: url('/static/img/computer-table.jpg');
+.fixed-background {
+    background-image: url("/static/img/computer-glasses.jpg");
     z-index: -1;
 }
 
@@ -196,13 +200,12 @@ h3.heading {
 }
 
 blockquote .svg-inline--fa {
-    color: #1ebba3;
+    color: var(--primary-color);
     margin: 1rem;
 }
 
 .testimonial-hr {
-    border-top: .05rem solid #1ebba3;
-
+    border-top: .05rem solid var(--primary-color);
 }
 
 /*Contact Section*/
@@ -229,7 +232,7 @@ footer svg.svg-inline--fa {
 }
 
 footer svg.svg-inline--fa:hover {
-    color: #1ebba3!important;
+    color: var(--primary-color)!important;
 }
 
 hr.socket {
