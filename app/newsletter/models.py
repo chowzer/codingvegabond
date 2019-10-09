@@ -7,7 +7,8 @@ class Subscriber(models.Model):
     
     class meta:
         verbose_name = "Subscriber"
+        verbose_name_plural = "Subscribers"
+                def __str__(self):
+                    return self.email
 
-    def __str__(self):
-        return self.email
 
